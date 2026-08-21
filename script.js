@@ -129,4 +129,5 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+setAssistantOpen(false);
 void checkAvailability();

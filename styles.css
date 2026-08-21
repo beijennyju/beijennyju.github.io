@@ -118,6 +118,7 @@ footer>a { font: 24px/1.2 Georgia,serif; border-bottom:1px solid var(--ink); pad
 .ai-launcher { border:0; border-radius:999px; padding:13px 18px 13px 14px; background:var(--ink); color:var(--paper); box-shadow:0 12px 35px rgba(22,52,46,.22); display:flex; align-items:center; gap:9px; font:12px Arial,sans-serif; text-transform:uppercase; letter-spacing:.1em; cursor:pointer; }
 .ai-spark { width:28px; height:28px; border-radius:50%; display:grid; place-items:center; background:var(--coral); color:var(--paper); font-size:15px; }
 .ai-panel { position:fixed; right:18px; top:92px; z-index:110; width:min(330px,calc(100vw - 32px)); height:min(510px,calc(100vh - 116px)); overflow:hidden; border:1px solid rgba(22,52,46,.2); border-radius:20px; background:var(--paper); box-shadow:0 20px 54px rgba(22,52,46,.22); display:grid; grid-template-rows:auto 1fr auto auto; }
+.ai-panel[hidden] { display:none; }
 .ai-header { padding:18px 18px 16px; background:var(--ink); color:var(--paper); display:flex; justify-content:space-between; align-items:center; }
 .ai-header p { margin:0 0 4px; font:italic 24px/1 Georgia,serif; }
 .ai-header span { font-size:10px; text-transform:uppercase; letter-spacing:.11em; opacity:.72; }
