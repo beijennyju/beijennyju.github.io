@@ -58,11 +58,21 @@
                 <div><p>Ask Bei AI</p><span>Profile-grounded research assistant</span></div>
                 <button type="button" id="ai-close" aria-label="Close assistant">×</button>
               </header>
-              <div class="ai-messages">
-                <p class="ai-message assistant">Hello — I’m Bei’s AI research assistant.</p>
+              <div class="ai-messages" id="ai-messages" aria-live="polite">
+                <p class="ai-message assistant">Hello — I’m Bei’s AI research assistant. Ask me about her research, publications, projects or professional profile.</p>
+                <div class="ai-starters" id="ai-starters" hidden>
+                  <button type="button">What are Bei’s research interests?</button>
+                  <button type="button">Which publications focus on migration?</button>
+                  <button type="button">How can I contact Bei?</button>
+                </div>
               </div>
-              <p class="ai-coming-soon">Bei AI is being prepared for this new website and will be available soon. In the meantime, please email <a href="mailto:beijennyju@gmail.com">beijennyju@gmail.com</a>.</p>
-              <p class="ai-note">No API key or personal data is stored in this static website.</p>
+              <p class="ai-coming-soon" id="ai-offline">Bei AI is being prepared for this new website and will be available soon. In the meantime, please email <a href="mailto:beijennyju@gmail.com">beijennyju@gmail.com</a>.</p>
+              <form class="ai-form" id="ai-form" hidden>
+                <label class="sr-only" for="ai-question">Ask a question</label>
+                <input id="ai-question" maxlength="500" placeholder="Ask about Bei’s work…" autocomplete="off">
+                <button type="submit" aria-label="Send question">↑</button>
+              </form>
+              <p class="ai-note">AI-generated answers may contain errors. Please verify important details.</p>
             </section>
             <button class="ai-launcher" id="ai-launcher" type="button" aria-expanded="false" aria-controls="ai-panel">
               <span class="ai-spark">✦</span><span>Ask Bei AI</span>
